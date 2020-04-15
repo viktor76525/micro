@@ -101,9 +101,9 @@ void init_message(char* bytes)
     bytes[7] = 0x00; // bat1 second byte perthousands int
     bytes[8] = 0x08; // speed0 first byte int
     bytes[9] = 0xF0; // speed1 second byte int (2236/int = speed, 2nd decimal truncated, sensitive to float error +- 0.1)
-    bytes[10] = 0x00; // 0xF1 enable led on but can't disable screen
+    bytes[10] = 0xF0; // 0xF1 enable led on but can't disable screen
     bytes[11] = 0x00; // 0x8- led on (binary pos for 8 on)
-    bytes[12] = 0x80; // 0x8- blink led (binary pos for 8 on) overrides led on, byte 10 not needed
+    bytes[12] = 0x00; // 0x8- blink led (binary pos for 8 on) overrides led on, byte 10 not needed
     // bytes[13] is the checksum and is calculated as part of the send procedure
 }
 
