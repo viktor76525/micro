@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=/home/<home_folder>/.VirtualBox/Compressed/VM Sample/Icon.png
+Type=Application
+Categories=Office;WordProcessor;
+Exec=/home/<home_folder>/.VirtualBox/Compressed/run.sh "VM Name" "IDE"
+Name=VM Name
+GenericName=VM Name
+Keywords=Office;Word;Excel;PowerPoint;doc;docx;xls;xlsx;ppt;pptx;
